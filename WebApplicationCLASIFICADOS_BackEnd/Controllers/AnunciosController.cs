@@ -9,7 +9,10 @@ using WebApplicationCLASIFICADOS_BackEnd.Models;
 
 namespace WebApplicationCLASIFICADOS_BackEnd.Controllers
 {
+
+    //[Route("api/[controller]/")]
     [ApiController]
+    //http://localhost:1088/api/Anuncios/
     public class AnunciosController : ControllerBase
     {
         private readonly ca_2Context _context;
@@ -20,8 +23,8 @@ namespace WebApplicationCLASIFICADOS_BackEnd.Controllers
         }
 
         // GET: Anuncios
-        [HttpGet("Index")]
-        public async Task<IActionResult> Index()
+        [HttpGet("anuncios")]
+        public async Task<IActionResult> anuncios()
         {
             return Ok(await _context.Anuncios.ToListAsync());
         }

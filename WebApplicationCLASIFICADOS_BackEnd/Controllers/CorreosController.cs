@@ -20,8 +20,8 @@ namespace WebApplicationCLASIFICADOS_BackEnd.Controllers
         }
 
         // GET: Correos
-        [HttpGet("Index_Correo")]
-        public async Task<IActionResult> Index_Correo()
+        [HttpGet("enviarEmail")]
+        public async Task<IActionResult> enviarEmail()
         {
             return Ok(await _context.Correos.ToListAsync());
         }
