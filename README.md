@@ -3,18 +3,15 @@ Ejercicio Práctico de Buscador de Anuncios
 =======================
 **Proyecto Fuente en GITHUB**: https://github.com/mariela-vc/WebApplicationCLASIFICADOS_BackEnd
 
+Instrucciones:
+
+1.-Descargar proyecto de ruta : https://github.com/mariela-vc/WebApplicationCLASIFICADOS_BackEnd
+2.-Ejecutar en Visual Estudio 2019 el proyecto BackEnd:  **WebApplicationCLASIFICADOS_BackEnd** el cual contiene la API para acceder a la base de datos **postgresql** 
+3.-Descomprimir el Proyecto FRONTEND:  **ProyectoFrontEnd.zip**
+4.-Abrir carpeta ProyectoFrontEnd , abrir archivo **EjercicioPractico**
+5.-Navegar en la página para  realizar la consulta de avisos y envio de correo.
+
+Nota: Por buenas practicas de diseño y desarrollo de proyectos  no es recomendable que las imagenes se guarden vía base de datos debido a que impacta al performance de la base de datos conforme aumenta el tamaño de la misma, en base a este punto este proyecto de ejercicio integre la sección de imagenes en la carpeta del proyecto de FrontEnd.
 
 
-A boilerplate for **Node.js** web applications.
-
-If you have attended any hackathons in the past, then you know how much time it takes to
-get a project started: decide on what to build, pick a programming language, pick a web framework,
-pick a CSS framework. A while later, you might have an initial project up on GitHub and only then
-can other team members start contributing. Or how about doing something as simple as *Sign in with Facebook*
-authentication? You can spend hours on it if you are not familiar with how OAuth 2.0 works.
-
-When I started this project, my primary focus was on **simplicity** and **ease of use**.
-I also tried to make it as **generic** and **reusable** as possible to cover most use cases of hackathon web apps,
-without being too specific. In the worst case you can use this as a learning guide for your projects,
-if for example you are only interested in **Sign in with Google** authentication and nothing else.
 
