@@ -48,13 +48,13 @@ namespace WebApplicationCLASIFICADOS_BackEnd.Controllers
 
         // GET: Correos/Create
                [HttpPost("Create_Correo")]
-        public async Task<IActionResult> Create_Correo([Bind("IdCorreo,Nombre,Correo1,Mensaje")] Correo correo)
+        public async Task<IActionResult> Create_Correo([Bind("IdCorreo,Nombre,Correo1,Mensaje")] Correos correo)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(correo);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Create_Correo));
             }
             return Ok(correo);
         }
@@ -64,7 +64,7 @@ namespace WebApplicationCLASIFICADOS_BackEnd.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost("Edit_Correo")]
 
-         public async Task<IActionResult> Edit_Correo(int id, [Bind("IdCorreo,Nombre,Correo1,Mensaje")] Correo correo)
+         public async Task<IActionResult> Edit_Correo(int id, [Bind("IdCorreo,Nombre,Correo1,Mensaje")] Correos correo)
         {
             if (id != correo.IdCorreo)
             {

@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 namespace WebApplicationCLASIFICADOS_BackEnd.Models
 {
-    public partial class Correo
+    public partial class Correos
     {
         public int IdCorreo { get; set; }
         public string Nombre { get; set; }
-        public string Correo1 { get; set; }
+        public string Correo { get; set; }
         public string Mensaje { get; set; }
     }
 }

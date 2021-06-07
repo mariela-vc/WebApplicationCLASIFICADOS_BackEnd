@@ -25,6 +25,9 @@ namespace WebApplicationCLASIFICADOS_BackEnd
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //anexo de configuración para quitar bloqueo de seguridad
+            services.AddCors();
+            //-------
             services.AddControllers();
             services.AddDbContext<ca_2Context>();
             services.AddSwaggerGen();
@@ -33,6 +36,21 @@ namespace WebApplicationCLASIFICADOS_BackEnd
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //anexo de configuración para quitar bloqueo de seguridad
+            //app.UseCors(options =>
+            //{
+            //    options.WithOrigins("http://localhost:1088/anuncios");
+            //    options.AllowAnyMethod();
+            //    options.AllowAnyHeader();
+            //});
+
+            app.UseCors(x => x
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .SetIsOriginAllowed(origin=>true)
+            .AllowCredentials());
+            //-------
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

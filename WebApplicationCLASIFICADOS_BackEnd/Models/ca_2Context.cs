@@ -18,7 +18,7 @@ namespace WebApplicationCLASIFICADOS_BackEnd.Models
         }
 
         public virtual DbSet<Anuncio> Anuncios { get; set; }
-        public virtual DbSet<Correo> Correos { get; set; }
+        public virtual DbSet<Correos> Correos { get; set; }
         public virtual DbSet<TipoAnuncio> TipoAnuncios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -55,7 +55,7 @@ namespace WebApplicationCLASIFICADOS_BackEnd.Models
                     .HasColumnName("TITULO");
             });
 
-            modelBuilder.Entity<Correo>(entity =>
+            modelBuilder.Entity<Correos>(entity =>
             {
                 entity.HasKey(e => e.IdCorreo)
                     .HasName("CORREO_pkey");
@@ -66,7 +66,7 @@ namespace WebApplicationCLASIFICADOS_BackEnd.Models
                     .ValueGeneratedNever()
                     .HasColumnName("ID_CORREO");
 
-                entity.Property(e => e.Correo1)
+                entity.Property(e => e.Correo)
                     .HasColumnType("character varying")
                     .HasColumnName("CORREO");
 
