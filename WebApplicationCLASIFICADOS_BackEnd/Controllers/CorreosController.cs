@@ -9,6 +9,7 @@ using WebApplicationCLASIFICADOS_BackEnd.Models;
 
 namespace WebApplicationCLASIFICADOS_BackEnd.Controllers
 {
+    //[Route("api/[controller]/")]
     [ApiController]
     public class CorreosController : ControllerBase
     {
