@@ -1,4 +1,4 @@
-![](https://images.alphacoders.com/750/75023.jpg)
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOmp5kYaKa-5QqcThcKjzW1IG_i0ciYi28A&usqp=CAU)
 Ejercicio Práctico de Buscador de Anuncios
 =======================
 
